@@ -10,8 +10,8 @@ const FormularioTarea = () => {
 
     const handleSubmit= (e)=> {
         e.preventDefault()
-        const nuevaTarea = { tarea: setTarea(e.target.value)}
-        setTarea([...tareas, nuevaTarea])
+        setTareas([...tareas, tarea])
+        setTarea('')
     }
 
   return (

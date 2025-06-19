@@ -22,7 +22,7 @@ const FormularioTarea = () => {
           <Button variant="success" type="submit">Enviar</Button>
         </Form.Group>
       </Form>
-      <ListaTareas></ListaTareas>
+      <ListaTareas tareas={tareas}></ListaTareas>
     </section>
   );
 };

@@ -14,6 +14,12 @@ const FormularioTarea = () => {
         setTarea('')
     }
 
+    const borrarTarea= (nombreTarea)=>{
+      const tareasFiltradas = tareas.filter((item)=> item !== nombreTarea)
+      //actualizar el estado tarea
+      setTareas(tareasFiltradas)
+    }
+
   return (
     <section>
       <Form onSubmit={handleSubmit}>
@@ -22,7 +28,7 @@ const FormularioTarea = () => {
           <Button variant="success" type="submit">Enviar</Button>
         </Form.Group>
       </Form>
-      <ListaTareas tareas={tareas}></ListaTareas>
+      <ListaTareas tareas={tareas} borrarTarea={borrarTarea}></ListaTareas>
     </section>
   );
 };

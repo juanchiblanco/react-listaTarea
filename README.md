@@ -1,20 +1,20 @@
-# ✅🗃️ React - Lista de Tareas con LocalStorage
+# ✅ React - Lista de Tareas
 
 ## 📌 Descripción
 
-Este proyecto es una extensión de la clásica **to-do list en React**, con la novedad de que:
+Este proyecto consiste en crear una aplicación web con **React** que permita al usuario:
 
-- ✅ Las tareas **se almacenan en el localStorage** del navegador.
-- 🔁 Al recargar la página, las tareas se **conservan** y se muestran automáticamente.
-- ✏️ El usuario puede ingresar nuevas tareas desde un input y agregarlas presionando **Enter**.
+- ✏️ **Ingresar una tarea** en un campo de texto (input).
+- ⌨️ Al presionar la tecla **Enter**, la tarea se agrega automáticamente a una **lista visual** de tareas pendientes.
+- 📋 Las tareas se muestran en pantalla, simulando una app de to-do list.
 
 ---
 
 ## 🎯 Objetivos del proyecto
 
-- Profundizar en el uso del **estado** y **ciclo de vida** en React.
-- Utilizar el **localStorage** del navegador para **persistencia de datos**.
-- Practicar la gestión de eventos y el renderizado dinámico de listas.
+- Practicar el manejo de **eventos de teclado** (onKeyDown / onKeyPress).
+- Gestionar **listas dinámicas** con estado (`useState`).
+- Renderizar contenido con React según la interacción del usuario.
 
 ---
 
@@ -23,7 +23,7 @@ Este proyecto es una extensión de la clásica **to-do list en React**, con la n
 - **React JS**
 - **JavaScript (ES6+)**
 - **HTML5 + CSS3**
-- *(Opcional)* Bootstrap o TailwindCSS para diseño y estilos
+- *(Opcional)* Bootstrap o TailwindCSS para estilos
 
 ---
 
@@ -41,23 +41,19 @@ bash
 Copiar
 Editar
 npm run dev
-Ingresar a la app desde el navegador: http://localhost:5173 o el puerto que indique la terminal.
+Acceder desde el navegador a http://localhost:5173 o el puerto indicado.
 
-💾 ¿Cómo funciona el localStorage?
-Cuando el usuario agrega una tarea, esta se guarda en el localStorage en formato JSON.
+## 📦 Características principales
+Input controlado para tareas.
 
-Al iniciar la aplicación, se recuperan las tareas previamente guardadas y se cargan al estado.
+Evento de teclado para capturar la tecla Enter.
 
-Si se recarga la página, las tareas persisten.
+Lista dinámica de tareas mostrada en pantalla.
 
-## 📦 Funcionalidades
-Input controlado para ingresar tareas.
+Limpieza del input luego de agregar una tarea.
 
-Manejo del evento Enter para agregar tareas.
-
-Renderizado de la lista en tiempo real.
-
-Persistencia automática de tareas con localStorage.
+✨ Podés extender la funcionalidad agregando opción de eliminar tareas, marcar como completadas, etc.
 
 ## 👨‍💻 Autor
 Juan Manuel Blanco
+

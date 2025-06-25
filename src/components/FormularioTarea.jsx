@@ -6,8 +6,7 @@ import { useForm } from "react-hook-form";
 
 const FormularioTarea = () => {
   // const [tarea, setTarea] = useState('')
-  const tareasLocalStorage =
-    JSON.parse(localStorage.getItem("listaTareas")) || [];
+  const tareasLocalStorage = JSON.parse(localStorage.getItem("listaTareas")) || [];
   const [tareas, setTareas] = useState(tareasLocalStorage);
   const {
     register,
